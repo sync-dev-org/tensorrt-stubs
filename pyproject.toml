@@ -49,7 +49,11 @@ include = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/tensorrt_stubs"]
+packages = [
+    "src/tensorrt",
+    "src/tensorrt_bindings",
+    "src/tensorrt_stubs",
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true
