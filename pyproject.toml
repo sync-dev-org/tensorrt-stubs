@@ -34,8 +34,7 @@ dev = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/minamik/tensorrt-stubs"
-"Bug Tracker" = "https://github.com/minamik/tensorrt-stubs/issues"
+"Homepage" = "https://github.com/sync-dev-org/tensorrt-stubs"
 
 [build-system]
 requires = ["hatchling"]
