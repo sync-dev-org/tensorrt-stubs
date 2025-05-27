@@ -1,7 +1,7 @@
 
 [project]
 name = "tensorrt-stubs"
-version = "10.11.0.33.post1"
+version = "10.11.0.33.1"
 description = "Type stubs for NVIDIA TensorRT"
 readme = "README.md"
 license = {file = "LICENSE"}
