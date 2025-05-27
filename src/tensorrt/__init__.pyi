@@ -5,8 +5,8 @@ import sys as sys
 from tensorrt_bindings import common_enter
 from tensorrt_bindings import common_exit
 from tensorrt_bindings import nptype
-from tensorrt_bindings import tensorrt
 import tensorrt_bindings.tensorrt
+from tensorrt_bindings import tensorrt
 from tensorrt_bindings.tensorrt import APILanguage
 from tensorrt_bindings.tensorrt import ActivationType
 from tensorrt_bindings.tensorrt import AllocatorFlag
