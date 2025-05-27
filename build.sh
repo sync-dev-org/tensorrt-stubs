@@ -5,11 +5,10 @@ set -euo pipefail
 VENV_DIR=".venv"
 
 TRT_VERSIONS=(
+    "10.8.0.43"
+    "10.9.0.34"
+    "10.10.0.31"
     "10.11.0.33"
-    #"10.10.0.31"
-    #"10.9.0.34"
-    #"10.8.0.43"
-    #"10.7.0.post1"
 )
 POST_VERSION="1"
 
@@ -27,7 +26,7 @@ fi
 
 
 for TRT_VERSION in "${TRT_VERSIONS[@]}" ; do
-    STUBS_VERSION="${TRT_VERSION}.post${POST_VERSION}"
+    STUBS_VERSION="${TRT_VERSION}.${POST_VERSION}"
     echo "Building TensorRT Stubs ${STUBS_VERSION}"
 
     if [[ -d ${VENV_DIR} ]]; then
@@ -53,7 +52,6 @@ for TRT_VERSION in "${TRT_VERSIONS[@]}" ; do
     echo "Creating virtual environment..."
     uv python pin ${PY_VERSION}
     uv sync --extra dev
-    #uv add tensorrt-cu12-bindings
 
     if [[ "$OSTYPE" == "msys"* ]]; then
         source ${VENV_DIR}/Scripts/activate
@@ -68,6 +66,6 @@ for TRT_VERSION in "${TRT_VERSIONS[@]}" ; do
     deactivate
 
     #twine upload --repository testpypi dist/tensorrt_stubs-${STUBS_VERSION}-py3-none-any.whl
-    #twine upload --repository pypi dist/tensorrt_stubs-${STUBS_VERSION}-py3-none-any.whl
+    twine upload --repository pypi dist/tensorrt_stubs-${STUBS_VERSION}-py3-none-any.whl
 
 done
