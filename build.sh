@@ -11,8 +11,10 @@ TRT_VERSIONS=(
     #"10.8.0.43"
     #"10.7.0.post1"
 )
+POST_VERSION="1"
 
 PY_VERSION="3.12"
+
 
 
 # if not uv installed, install it
@@ -25,7 +27,8 @@ fi
 
 
 for TRT_VERSION in "${TRT_VERSIONS[@]}" ; do
-    echo "Building TensorRT Stubs ${TRT_VERSION}"
+    STUBS_VERSION="${TRT_VERSION}.post${POST_VERSION}"
+    echo "Building TensorRT Stubs ${STUBS_VERSION}"
 
     if [[ -d ${VENV_DIR} ]]; then
         echo "Virtual environment already exists, removing it..."
@@ -37,12 +40,15 @@ for TRT_VERSION in "${TRT_VERSIONS[@]}" ; do
     mkdir -p src
 
     cp ./template/pyproject.toml pyproject.toml
-    sed -i "s/version = \"0.0.0.0\"/version = \"${TRT_VERSION}\"/" ./pyproject.toml
+    sed -i "s/version = \"0.0.0.0\"/version = \"${STUBS_VERSION}\"/" ./pyproject.toml
     sed -i "s/tensorrt==0.0.0.0/tensorrt==${TRT_VERSION}/" ./pyproject.toml
     sed -i "s/tensorrt-cu12-bindings==0.0.0.0/tensorrt-cu12-bindings==${TRT_VERSION}/" ./pyproject.toml
 
+    cp ./template/README.md README.md
+    sed -i "s/0.0.0.0/${TRT_VERSION}/" ./README.md
+
     cp -r ./template/tensorrt_stubs src
-    sed -i "s/__version__ = \"0.0.0.0\"/__version__ = \"${TRT_VERSION}\"/" ./src/tensorrt_stubs/__init__.py
+    sed -i "s/__version__ = \"0.0.0.0\"/__version__ = \"${STUBS_VERSION}\"/" ./src/tensorrt_stubs/__init__.py
 
     echo "Creating virtual environment..."
     uv python pin ${PY_VERSION}
@@ -60,5 +66,8 @@ for TRT_VERSION in "${TRT_VERSIONS[@]}" ; do
     uv build
 
     deactivate
+
+    #twine upload --repository testpypi dist/tensorrt_stubs-${STUBS_VERSION}-py3-none-any.whl
+    #twine upload --repository pypi dist/tensorrt_stubs-${STUBS_VERSION}-py3-none-any.whl
 
 done
