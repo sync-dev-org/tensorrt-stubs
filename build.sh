@@ -66,6 +66,6 @@ for TRT_VERSION in "${TRT_VERSIONS[@]}" ; do
     deactivate
 
     #twine upload --repository testpypi dist/tensorrt_stubs-${STUBS_VERSION}-py3-none-any.whl
-    twine upload --repository pypi dist/tensorrt_stubs-${STUBS_VERSION}-py3-none-any.whl
+    #twine upload --repository pypi dist/tensorrt_stubs-${STUBS_VERSION}-py3-none-any.whl
 
 done
