@@ -9,6 +9,8 @@ TRT_VERSIONS=(
     "10.9.0.34"
     "10.10.0.31"
     "10.11.0.33"
+    "10.12.0.36"
+    "10.13.0.35"
 )
 POST_VERSION="1"
 
@@ -65,7 +67,7 @@ for TRT_VERSION in "${TRT_VERSIONS[@]}" ; do
 
     deactivate
 
-    #twine upload --repository testpypi dist/tensorrt_stubs-${STUBS_VERSION}-py3-none-any.whl
-    #twine upload --repository pypi dist/tensorrt_stubs-${STUBS_VERSION}-py3-none-any.whl
+    # . ./.venv/Scripts/activate && twine upload --repository testpypi --skip-existing dist/*
+    # . ./.venv/Scripts/activate && twine upload --repository pypi --skip-existing dist/*
 
 done

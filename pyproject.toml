@@ -1,7 +1,7 @@
 
 [project]
 name = "tensorrt-stubs"
-version = "10.11.0.33.1"
+version = "10.13.0.35.1"
 description = "Type stubs for NVIDIA TensorRT"
 readme = "README.md"
 license = {file = "LICENSE"}
@@ -23,8 +23,8 @@ classifiers = [
 ]
 dependencies = [
     "numpy",
-    "tensorrt==10.11.0.33",
-    "tensorrt-cu12-bindings==10.11.0.33",
+    "tensorrt==10.13.0.35",
+    "tensorrt-cu12-bindings==10.13.0.35",
 ]
 
 [project.optional-dependencies]

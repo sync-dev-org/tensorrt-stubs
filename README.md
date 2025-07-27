@@ -26,7 +26,7 @@ builder = trt.Builder(trt.Logger(trt.Logger.INFO))
 ## Requirements
 
 - Python >= 3.10
-- TensorRT == 10.11.0.33
+- TensorRT 10.8.0.43 - 10.13.0.35
 
 ## License
 

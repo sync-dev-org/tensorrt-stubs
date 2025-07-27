@@ -1,7 +1,7 @@
 from __future__ import annotations
 import numpy
 import typing
-__all__ = ['APILanguage', 'ActivationType', 'AllocatorFlag', 'BoundingBoxFormat', 'Builder', 'BuilderFlag', 'CalibrationAlgoType', 'CumulativeOperation', 'DataType', 'DeviceType', 'DimensionOperation', 'Dims', 'Dims2', 'Dims3', 'Dims4', 'DimsExprs', 'DimsHW', 'DynamicPluginTensorDesc', 'ElementWiseOperation', 'EngineCapability', 'EngineInspector', 'ErrorCode', 'ErrorCodeTRT', 'ExecutionContextAllocationStrategy', 'FallbackString', 'FillOperation', 'GatherMode', 'HardwareCompatibilityLevel', 'IActivationLayer', 'IAlgorithm', 'IAlgorithmContext', 'IAlgorithmIOInfo', 'IAlgorithmSelector', 'IAlgorithmVariant', 'IAssertionLayer', 'IBuilderConfig', 'ICastLayer', 'IConcatenationLayer', 'IConditionLayer', 'IConstantLayer', 'IConvolutionLayer', 'ICudaEngine', 'ICumulativeLayer', 'IDebugListener', 'IDeconvolutionLayer', 'IDequantizeLayer', 'IDimensionExpr', 'IDynamicQuantizeLayer', 'IEinsumLayer', 'IElementWiseLayer', 'IErrorRecorder', 'IExecutionContext', 'IExprBuilder', 'IFillLayer', 'IGatherLayer', 'IGpuAllocator', 'IGpuAsyncAllocator', 'IGridSampleLayer', 'IHostMemory', 'IIdentityLayer', 'IIfConditional', 'IIfConditionalBoundaryLayer', 'IIfConditionalInputLayer', 'IIfConditionalOutputLayer', 'IInt8Calibrator', 'IInt8EntropyCalibrator', 'IInt8EntropyCalibrator2', 'IInt8LegacyCalibrator', 'IInt8MinMaxCalibrator', 'IIteratorLayer', 'ILRNLayer', 'ILayer', 'ILogger', 'ILoop', 'ILoopBoundaryLayer', 'ILoopOutputLayer', 'IMatrixMultiplyLayer', 'INMSLayer', 'INetworkDefinition', 'INonZeroLayer', 'INormalizationLayer', 'IOneHotLayer', 'IOptimizationProfile', 'IOutputAllocator', 'IPaddingLayer', 'IParametricReLULayer', 'IPluginCapability', 'IPluginCreator', 'IPluginCreatorInterface', 'IPluginCreatorV3One', 'IPluginCreatorV3Quick', 'IPluginRegistry', 'IPluginResource', 'IPluginResourceContext', 'IPluginV2', 'IPluginV2DynamicExt', 'IPluginV2DynamicExtBase', 'IPluginV2Ext', 'IPluginV2Layer', 'IPluginV3', 'IPluginV3Layer', 'IPluginV3OneBuild', 'IPluginV3OneBuildV2', 'IPluginV3OneCore', 'IPluginV3OneRuntime', 'IPluginV3QuickAOTBuild', 'IPluginV3QuickBuild', 'IPluginV3QuickCore', 'IPluginV3QuickRuntime', 'IPoolingLayer', 'IProfiler', 'IProgressMonitor', 'IQuantizeLayer', 'IRaggedSoftMaxLayer', 'IRecurrenceLayer', 'IReduceLayer', 'IResizeLayer', 'IReverseSequenceLayer', 'IRuntimeConfig', 'IScaleLayer', 'IScatterLayer', 'ISelectLayer', 'ISerializationConfig', 'IShapeLayer', 'IShuffleLayer', 'ISliceLayer', 'ISoftMaxLayer', 'ISqueezeLayer', 'IStreamReader', 'IStreamReaderV2', 'ISymExpr', 'ISymExprs', 'ITensor', 'ITimingCache', 'ITopKLayer', 'ITripLimitLayer', 'IUnaryLayer', 'IUnsqueezeLayer', 'IVersionedInterface', 'InterfaceInfo', 'InterpolationMode', 'KernelLaunchParams', 'LayerInformationFormat', 'LayerType', 'Logger', 'LoopOutput', 'MatrixOperation', 'MemoryPoolType', 'NetworkDefinitionCreationFlag', 'NodeIndices', 'OnnxParser', 'OnnxParserFlag', 'OnnxParserRefitter', 'PaddingMode', 'ParserError', 'Permutation', 'PluginArgDataType', 'PluginArgType', 'PluginCapabilityType', 'PluginCreatorVersion', 'PluginField', 'PluginFieldCollection', 'PluginFieldCollection_', 'PluginFieldType', 'PluginTensorDesc', 'PoolingType', 'PreviewFeature', 'Profiler', 'ProfilingVerbosity', 'QuantizationFlag', 'QuickPluginCreationRequest', 'ReduceOperation', 'Refitter', 'ResizeCoordinateTransformation', 'ResizeRoundMode', 'ResizeSelector', 'Runtime', 'RuntimePlatform', 'SampleMode', 'ScaleMode', 'ScatterMode', 'SeekPosition', 'SerializationFlag', 'SubGraphCollection', 'TacticSource', 'TempfileControlFlag', 'TensorFormat', 'TensorIOMode', 'TensorLocation', 'TensorRTPhase', 'TilingOptimizationLevel', 'TimingCacheKey', 'TimingCacheValue', 'TopKOperation', 'TripLimit', 'UnaryOperation', 'Weights', 'WeightsRole', 'bfloat16', 'bool', 'float16', 'float32', 'fp4', 'fp8', 'get_builder_plugin_registry', 'get_nv_onnx_parser_version', 'get_plugin_registry', 'init_libnvinfer_plugins', 'int32', 'int4', 'int64', 'int8', 'uint8']
+__all__ = ['APILanguage', 'ActivationType', 'AllocatorFlag', 'BoundingBoxFormat', 'Builder', 'BuilderFlag', 'CalibrationAlgoType', 'CumulativeOperation', 'DataType', 'DeviceType', 'DimensionOperation', 'Dims', 'Dims2', 'Dims3', 'Dims4', 'DimsExprs', 'DimsHW', 'DynamicPluginTensorDesc', 'ElementWiseOperation', 'EngineCapability', 'EngineInspector', 'ErrorCode', 'ErrorCodeTRT', 'ExecutionContextAllocationStrategy', 'FallbackString', 'FillOperation', 'GatherMode', 'HardwareCompatibilityLevel', 'IActivationLayer', 'IAlgorithm', 'IAlgorithmContext', 'IAlgorithmIOInfo', 'IAlgorithmSelector', 'IAlgorithmVariant', 'IAssertionLayer', 'IBuilderConfig', 'ICastLayer', 'IConcatenationLayer', 'IConditionLayer', 'IConstantLayer', 'IConvolutionLayer', 'ICudaEngine', 'ICumulativeLayer', 'IDebugListener', 'IDeconvolutionLayer', 'IDequantizeLayer', 'IDimensionExpr', 'IDynamicQuantizeLayer', 'IEinsumLayer', 'IElementWiseLayer', 'IErrorRecorder', 'IExecutionContext', 'IExprBuilder', 'IFillLayer', 'IGatherLayer', 'IGpuAllocator', 'IGpuAsyncAllocator', 'IGridSampleLayer', 'IHostMemory', 'IIdentityLayer', 'IIfConditional', 'IIfConditionalBoundaryLayer', 'IIfConditionalInputLayer', 'IIfConditionalOutputLayer', 'IInt8Calibrator', 'IInt8EntropyCalibrator', 'IInt8EntropyCalibrator2', 'IInt8LegacyCalibrator', 'IInt8MinMaxCalibrator', 'IIteratorLayer', 'ILRNLayer', 'ILayer', 'ILogger', 'ILoop', 'ILoopBoundaryLayer', 'ILoopOutputLayer', 'IMatrixMultiplyLayer', 'INMSLayer', 'INetworkDefinition', 'INonZeroLayer', 'INormalizationLayer', 'IOneHotLayer', 'IOptimizationProfile', 'IOutputAllocator', 'IPaddingLayer', 'IParametricReLULayer', 'IPluginCapability', 'IPluginCreator', 'IPluginCreatorInterface', 'IPluginCreatorV3One', 'IPluginCreatorV3Quick', 'IPluginRegistry', 'IPluginResource', 'IPluginResourceContext', 'IPluginV2', 'IPluginV2DynamicExt', 'IPluginV2DynamicExtBase', 'IPluginV2Ext', 'IPluginV2Layer', 'IPluginV3', 'IPluginV3Layer', 'IPluginV3OneBuild', 'IPluginV3OneBuildV2', 'IPluginV3OneCore', 'IPluginV3OneRuntime', 'IPluginV3QuickAOTBuild', 'IPluginV3QuickBuild', 'IPluginV3QuickCore', 'IPluginV3QuickRuntime', 'IPoolingLayer', 'IProfiler', 'IProgressMonitor', 'IQuantizeLayer', 'IRaggedSoftMaxLayer', 'IRecurrenceLayer', 'IReduceLayer', 'IResizeLayer', 'IReverseSequenceLayer', 'IRuntimeConfig', 'IScaleLayer', 'IScatterLayer', 'ISelectLayer', 'ISerializationConfig', 'IShapeLayer', 'IShuffleLayer', 'ISliceLayer', 'ISoftMaxLayer', 'ISqueezeLayer', 'IStreamReader', 'IStreamReaderV2', 'IStreamWriter', 'ISymExpr', 'ISymExprs', 'ITensor', 'ITimingCache', 'ITopKLayer', 'ITripLimitLayer', 'IUnaryLayer', 'IUnsqueezeLayer', 'IVersionedInterface', 'InterfaceInfo', 'InterpolationMode', 'KernelLaunchParams', 'LayerInformationFormat', 'LayerType', 'Logger', 'LoopOutput', 'MatrixOperation', 'MemoryPoolType', 'NetworkDefinitionCreationFlag', 'NodeIndices', 'OnnxParser', 'OnnxParserFlag', 'OnnxParserRefitter', 'PaddingMode', 'ParserError', 'Permutation', 'PluginArgDataType', 'PluginArgType', 'PluginCapabilityType', 'PluginCreatorVersion', 'PluginField', 'PluginFieldCollection', 'PluginFieldCollection_', 'PluginFieldType', 'PluginTensorDesc', 'PoolingType', 'PreviewFeature', 'Profiler', 'ProfilingVerbosity', 'QuantizationFlag', 'QuickPluginCreationRequest', 'ReduceOperation', 'Refitter', 'ResizeCoordinateTransformation', 'ResizeRoundMode', 'ResizeSelector', 'Runtime', 'RuntimePlatform', 'SampleMode', 'ScaleMode', 'ScatterMode', 'SeekPosition', 'SerializationFlag', 'SubGraphCollection', 'TacticSource', 'TempfileControlFlag', 'TensorFormat', 'TensorIOMode', 'TensorLocation', 'TensorRTPhase', 'TilingOptimizationLevel', 'TimingCacheKey', 'TimingCacheValue', 'TopKOperation', 'TripLimit', 'UnaryOperation', 'Weights', 'WeightsRole', 'bfloat16', 'bool', 'e8m0', 'float16', 'float32', 'fp4', 'fp8', 'get_builder_plugin_registry', 'get_nv_onnx_parser_version', 'get_plugin_registry', 'init_libnvinfer_plugins', 'int32', 'int4', 'int64', 'int8', 'uint8']
 class APILanguage:
     """
     
@@ -260,6 +260,18 @@ class Builder:
         
             :returns: A pointer to a :class:`IHostMemory` object that contains a serialized network.
         """
+    def build_serialized_network_to_stream(self, network: INetworkDefinition, config: IBuilderConfig, writer: IStreamWriter) -> bool:
+        """
+            Builds and serializes a network for the given :class:`INetworkDefinition` and :class:`IBuilderConfig` and write the serialized network to a writer stream.
+        
+            This function allows building and serialization of a network without creating an engine.
+        
+            :arg network: Network definition.
+            :arg config: Builder configuration.
+            :arg writer: Output stream writer.
+        
+            :returns: True if build succeed, otherwise False.
+        """
     def create_builder_config(self) -> IBuilderConfig:
         """
             Create a builder configuration object.
@@ -332,11 +344,14 @@ class BuilderFlag:
     
     Members:
     
-      FP16 : Enable FP16 layer selection
+      FP16 : Enable FP16 layer selection.
+                    [DEPRECATED] Deprecated in TensorRT 10.12. Superseded by strong typing.
     
-      BF16 : Enable BF16 layer selection
+      BF16 : Enable BF16 layer selection.
+                   [DEPRECATED] Deprecated in TensorRT 10.12. Superseded by strong typing.
     
-      INT8 : Enable Int8 layer selection
+      INT8 : Enable Int8 layer selection.
+                   [DEPRECATED] Deprecated in TensorRT 10.12. Superseded by strong typing.
     
       DEBUG : Enable debugging of layers via synchronizing after every layer
     
@@ -355,8 +370,10 @@ class BuilderFlag:
       SAFETY_SCOPE : Change the allowed parameters in the EngineCapability.STANDARD flow to match the restrictions that EngineCapability.SAFETY check against for DeviceType.GPU and EngineCapability.DLA_STANDALONE check against the DeviceType.DLA case. This flag is forced to true if EngineCapability.SAFETY at build time if it is unset.
     
       OBEY_PRECISION_CONSTRAINTS : Require that layers execute in specified precisions. Build fails otherwise.
+                   [DEPRECATED] Deprecated in TensorRT 10.12. Superseded by strong typing.
     
       PREFER_PRECISION_CONSTRAINTS : Prefer that layers execute in specified precisions. Fall back (with warning) to another precision if build would otherwise fail.
+                   [DEPRECATED] Deprecated in TensorRT 10.12. Superseded by strong typing.
     
       DIRECT_IO : Require that no reformats be inserted between a layer and a network I/O tensor for which ``ITensor.allowed_formats`` was set. Build fails if a reformat is required for functional correctness.
                    [DEPRECATED] Deprecated in TensorRT 10.7.)
@@ -368,6 +385,7 @@ class BuilderFlag:
       EXCLUDE_LEAN_RUNTIME : Exclude lean runtime from the plan.
     
       FP8 : Enable plugins with FP8 input/output
+        [DEPRECATED] Deprecated in TensorRT 10.12. Superseded by strong typing.
     
       ERROR_ON_TIMING_CACHE_MISS : Emit error when a tactic being timed is not present in the timing cache.
     
@@ -384,6 +402,7 @@ class BuilderFlag:
       WEIGHT_STREAMING : Enable building with the ability to stream varying amounts of weights during Runtime. This decreases GPU memory of TRT at the expense of performance.
     
       INT4 : Enable plugins with INT4 input/output
+                   [DEPRECATED] Deprecated in TensorRT 10.12. Superseded by strong typing.
     
       REFIT_INDIVIDUAL : Create a refittable engine and allows the users to specify which weights are refittable and which are not.
     
@@ -392,12 +411,16 @@ class BuilderFlag:
       MONITOR_MEMORY : Enable memory monitor during build time.
     
       FP4 : Enable plugins with FP4 input/output
+                   [DEPRECATED] Deprecated in TensorRT 10.12. Superseded by strong typing.
+    
+      DISTRIBUTIVE_INDEPENDENCE : Enable distributive independence.
     """
     BF16: typing.ClassVar[BuilderFlag]  # value = <BuilderFlag.BF16: 17>
     DEBUG: typing.ClassVar[BuilderFlag]  # value = <BuilderFlag.DEBUG: 2>
     DIRECT_IO: typing.ClassVar[BuilderFlag]  # value = <BuilderFlag.DIRECT_IO: 11>
     DISABLE_COMPILATION_CACHE: typing.ClassVar[BuilderFlag]  # value = <BuilderFlag.DISABLE_COMPILATION_CACHE: 18>
     DISABLE_TIMING_CACHE: typing.ClassVar[BuilderFlag]  # value = <BuilderFlag.DISABLE_TIMING_CACHE: 5>
+    DISTRIBUTIVE_INDEPENDENCE: typing.ClassVar[BuilderFlag]  # value = <BuilderFlag.DISTRIBUTIVE_INDEPENDENCE: 28>
     EDITABLE_TIMING_CACHE: typing.ClassVar[BuilderFlag]  # value = <BuilderFlag.EDITABLE_TIMING_CACHE: 27>
     ERROR_ON_TIMING_CACHE_MISS: typing.ClassVar[BuilderFlag]  # value = <BuilderFlag.ERROR_ON_TIMING_CACHE_MISS: 16>
     EXCLUDE_LEAN_RUNTIME: typing.ClassVar[BuilderFlag]  # value = <BuilderFlag.EXCLUDE_LEAN_RUNTIME: 14>
@@ -422,7 +445,7 @@ class BuilderFlag:
     VERSION_COMPATIBLE: typing.ClassVar[BuilderFlag]  # value = <BuilderFlag.VERSION_COMPATIBLE: 13>
     WEIGHTLESS: typing.ClassVar[BuilderFlag]  # value = <BuilderFlag.WEIGHTLESS: 19>
     WEIGHT_STREAMING: typing.ClassVar[BuilderFlag]  # value = <BuilderFlag.WEIGHT_STREAMING: 21>
-    __members__: typing.ClassVar[dict[str, BuilderFlag]]  # value = {'FP16': <BuilderFlag.FP16: 0>, 'BF16': <BuilderFlag.BF16: 17>, 'INT8': <BuilderFlag.INT8: 1>, 'DEBUG': <BuilderFlag.DEBUG: 2>, 'GPU_FALLBACK': <BuilderFlag.GPU_FALLBACK: 3>, 'REFIT': <BuilderFlag.REFIT: 4>, 'DISABLE_TIMING_CACHE': <BuilderFlag.DISABLE_TIMING_CACHE: 5>, 'EDITABLE_TIMING_CACHE': <BuilderFlag.EDITABLE_TIMING_CACHE: 27>, 'TF32': <BuilderFlag.TF32: 6>, 'SPARSE_WEIGHTS': <BuilderFlag.SPARSE_WEIGHTS: 7>, 'SAFETY_SCOPE': <BuilderFlag.SAFETY_SCOPE: 8>, 'OBEY_PRECISION_CONSTRAINTS': <BuilderFlag.OBEY_PRECISION_CONSTRAINTS: 9>, 'PREFER_PRECISION_CONSTRAINTS': <BuilderFlag.PREFER_PRECISION_CONSTRAINTS: 10>, 'DIRECT_IO': <BuilderFlag.DIRECT_IO: 11>, 'REJECT_EMPTY_ALGORITHMS': <BuilderFlag.REJECT_EMPTY_ALGORITHMS: 12>, 'VERSION_COMPATIBLE': <BuilderFlag.VERSION_COMPATIBLE: 13>, 'EXCLUDE_LEAN_RUNTIME': <BuilderFlag.EXCLUDE_LEAN_RUNTIME: 14>, 'FP8': <BuilderFlag.FP8: 15>, 'ERROR_ON_TIMING_CACHE_MISS': <BuilderFlag.ERROR_ON_TIMING_CACHE_MISS: 16>, 'DISABLE_COMPILATION_CACHE': <BuilderFlag.DISABLE_COMPILATION_CACHE: 18>, 'WEIGHTLESS': <BuilderFlag.WEIGHTLESS: 19>, 'STRIP_PLAN': <BuilderFlag.WEIGHTLESS: 19>, 'REFIT_IDENTICAL': <BuilderFlag.REFIT_IDENTICAL: 20>, 'WEIGHT_STREAMING': <BuilderFlag.WEIGHT_STREAMING: 21>, 'INT4': <BuilderFlag.INT4: 22>, 'REFIT_INDIVIDUAL': <BuilderFlag.REFIT_INDIVIDUAL: 23>, 'STRICT_NANS': <BuilderFlag.STRICT_NANS: 24>, 'MONITOR_MEMORY': <BuilderFlag.MONITOR_MEMORY: 25>, 'FP4': <BuilderFlag.FP4: 26>}
+    __members__: typing.ClassVar[dict[str, BuilderFlag]]  # value = {'FP16': <BuilderFlag.FP16: 0>, 'BF16': <BuilderFlag.BF16: 17>, 'INT8': <BuilderFlag.INT8: 1>, 'DEBUG': <BuilderFlag.DEBUG: 2>, 'GPU_FALLBACK': <BuilderFlag.GPU_FALLBACK: 3>, 'REFIT': <BuilderFlag.REFIT: 4>, 'DISABLE_TIMING_CACHE': <BuilderFlag.DISABLE_TIMING_CACHE: 5>, 'EDITABLE_TIMING_CACHE': <BuilderFlag.EDITABLE_TIMING_CACHE: 27>, 'TF32': <BuilderFlag.TF32: 6>, 'SPARSE_WEIGHTS': <BuilderFlag.SPARSE_WEIGHTS: 7>, 'SAFETY_SCOPE': <BuilderFlag.SAFETY_SCOPE: 8>, 'OBEY_PRECISION_CONSTRAINTS': <BuilderFlag.OBEY_PRECISION_CONSTRAINTS: 9>, 'PREFER_PRECISION_CONSTRAINTS': <BuilderFlag.PREFER_PRECISION_CONSTRAINTS: 10>, 'DIRECT_IO': <BuilderFlag.DIRECT_IO: 11>, 'REJECT_EMPTY_ALGORITHMS': <BuilderFlag.REJECT_EMPTY_ALGORITHMS: 12>, 'VERSION_COMPATIBLE': <BuilderFlag.VERSION_COMPATIBLE: 13>, 'EXCLUDE_LEAN_RUNTIME': <BuilderFlag.EXCLUDE_LEAN_RUNTIME: 14>, 'FP8': <BuilderFlag.FP8: 15>, 'ERROR_ON_TIMING_CACHE_MISS': <BuilderFlag.ERROR_ON_TIMING_CACHE_MISS: 16>, 'DISABLE_COMPILATION_CACHE': <BuilderFlag.DISABLE_COMPILATION_CACHE: 18>, 'WEIGHTLESS': <BuilderFlag.WEIGHTLESS: 19>, 'STRIP_PLAN': <BuilderFlag.WEIGHTLESS: 19>, 'REFIT_IDENTICAL': <BuilderFlag.REFIT_IDENTICAL: 20>, 'WEIGHT_STREAMING': <BuilderFlag.WEIGHT_STREAMING: 21>, 'INT4': <BuilderFlag.INT4: 22>, 'REFIT_INDIVIDUAL': <BuilderFlag.REFIT_INDIVIDUAL: 23>, 'STRICT_NANS': <BuilderFlag.STRICT_NANS: 24>, 'MONITOR_MEMORY': <BuilderFlag.MONITOR_MEMORY: 25>, 'FP4': <BuilderFlag.FP4: 26>, 'DISTRIBUTIVE_INDEPENDENCE': <BuilderFlag.DISTRIBUTIVE_INDEPENDENCE: 28>}
     def __eq__(self, other: typing.Any) -> bool:
         ...
     def __ge__(self, other: typing.Any) -> bool:
@@ -589,9 +612,12 @@ class DataType:
       INT4 : Signed 4-bit integer representing a quantized floating-point value.
     
       FP4 : Signed 4-bit floating point with 1 sign bit, 2 exponent bits and 1 mantissa bits.
+    
+      E8M0 : Unsigned 8-bit exponent-only floating point.
     """
     BF16: typing.ClassVar[DataType]  # value = <DataType.BF16: 7>
     BOOL: typing.ClassVar[DataType]  # value = <DataType.BOOL: 4>
+    E8M0: typing.ClassVar[DataType]  # value = <DataType.E8M0: 11>
     FLOAT: typing.ClassVar[DataType]  # value = <DataType.FLOAT: 0>
     FP4: typing.ClassVar[DataType]  # value = <DataType.FP4: 10>
     FP8: typing.ClassVar[DataType]  # value = <DataType.FP8: 6>
@@ -601,7 +627,7 @@ class DataType:
     INT64: typing.ClassVar[DataType]  # value = <DataType.INT64: 8>
     INT8: typing.ClassVar[DataType]  # value = <DataType.INT8: 2>
     UINT8: typing.ClassVar[DataType]  # value = <DataType.UINT8: 5>
-    __members__: typing.ClassVar[dict[str, DataType]]  # value = {'FLOAT': <DataType.FLOAT: 0>, 'HALF': <DataType.HALF: 1>, 'BF16': <DataType.BF16: 7>, 'INT8': <DataType.INT8: 2>, 'INT32': <DataType.INT32: 3>, 'INT64': <DataType.INT64: 8>, 'BOOL': <DataType.BOOL: 4>, 'UINT8': <DataType.UINT8: 5>, 'FP8': <DataType.FP8: 6>, 'INT4': <DataType.INT4: 9>, 'FP4': <DataType.FP4: 10>}
+    __members__: typing.ClassVar[dict[str, DataType]]  # value = {'FLOAT': <DataType.FLOAT: 0>, 'HALF': <DataType.HALF: 1>, 'BF16': <DataType.BF16: 7>, 'INT8': <DataType.INT8: 2>, 'INT32': <DataType.INT32: 3>, 'INT64': <DataType.INT64: 8>, 'BOOL': <DataType.BOOL: 4>, 'UINT8': <DataType.UINT8: 5>, 'FP8': <DataType.FP8: 6>, 'INT4': <DataType.INT4: 9>, 'FP4': <DataType.FP4: 10>, 'E8M0': <DataType.E8M0: 11>}
     def __eq__(self, other: typing.Any) -> bool:
         ...
     def __getstate__(self) -> int:
@@ -1662,6 +1688,7 @@ class IBuilderConfig:
             :ivar progress_monitor: The :class:`IProgressMonitor` to use.
             :ivar tiling_optimization_level: The optimization level of tiling strategies. A Higher level allows TensorRT to spend more time searching for better optimization strategy.
             :ivar l2_limit_for_tiling: The target L2 cache usage for tiling optimization.
+            :ivar remote_auto_tuning_config: The config string to be used during remote auto-tuning. Remote auto-tuning is only enabled for engines built with EngineCapability.SAFETY.
     
             Below are the descriptions about each builder optimization level:
     
@@ -1690,6 +1717,7 @@ class IBuilderConfig:
     profiling_verbosity: ProfilingVerbosity
     progress_monitor: IProgressMonitor
     quantization_flags: int
+    remote_auto_tuning_config: str
     runtime_platform: RuntimePlatform
     tiling_optimization_level: TilingOptimizationLevel
     @staticmethod
@@ -2451,7 +2479,7 @@ class IDequantizeLayer(ILayer):
         constrained to tensorrt.float32, tensorrt.float16 or tensorrt.bfloat16.
         The output size is the same as the input size.
     
-        IDequantizeLayer supports tensorrt.int8 and tensorrt.float8 precision and will default to tensorrt.int8 precision during instantiation.
+        IDequantizeLayer supports tensorrt.int8, tensorrt.float8, tensorrt.int4 and tensorrt.fp4 precision and will default to tensorrt.int8 precision during instantiation.
         IDequantizeLayer supports tensorrt.float32, tensorrt.float16 and tensorrt.bfloat16 output.
     
         :ivar axis: :class:`int` The axis along which dequantization occurs. The dequantization axis is in reference to the input tensor's dimensions.
@@ -2488,7 +2516,7 @@ class IDynamicQuantizeLayer(ILayer):
         A DynamicQuantize layer in an :class:`INetworkDefinition` .
     
         This layer performs dynamic block quantization of its input tensor and outputs the quantized data and the computed block scale-factors.
-        The block size is currently limited to 16 and the size of the blocked axis must be divisible by 16.
+        The size of the blocked axis must be divisible by the block size.
     
         The first input (index 0) is the tensor to be quantized. Its data type must be one of DataType::kFLOAT,
         DataType::kHALF, or DataType::kBF16. Currently only 2D and 3D inputs are supported.
@@ -2496,9 +2524,9 @@ class IDynamicQuantizeLayer(ILayer):
         The second input (index 1) is the double quantization scale factor. It is a scalar scale factor used to quantize the computed block scales-factors.
     
         :ivar axis: :class:`int` The axis that is sliced into blocks. The axis must be the last dimension or the second to last dimension.
-        :ivar block_size: :class:`int` The number of elements that are quantized using a shared scale factor. Currently only blocks of 16 elements are supported.
-        :ivar output_type: :class:`DataType` The data type of the quantized output tensor, must be DataType::kFP4.
-        :ivar scale_type: :class:`DataType` The data type of the scale factor used for quantizing the input data, must be DataType::kFP8.
+        :ivar block_size: :class:`int` The number of elements that are quantized using a shared scale factor. Supports block sizes of 16 with NVFP4 quantization and 32 with MXFP8 quantization.
+        :ivar output_type: :class:`DataType` The data type of the quantized output tensor, must be either DataType::kFP4 (NVFP4 quantization) or DataType::kFP8 (MXFP8 quantization).
+        :ivar scale_type: :class:`DataType` The data type of the scale factor used for quantizing the input data, must be DataType::kFP8 (NVFP4 quantization) or DataType::kE8M0 (MXFP8 quantization).
     """
     axis: int
     block_size: int
@@ -2673,6 +2701,7 @@ class IExecutionContext:
     persistent_cache_limit: int
     profiler: IProfiler
     temporary_allocator: ...
+    unfused_tensors_debug_state: bool
     @staticmethod
     def __enter__(this):
         ...
@@ -3840,6 +3869,7 @@ class ILayer:
         """
     def output_type_is_set(self, index: int) -> bool:
         """
+            [DEPRECATED] Deprecated in TensorRT 10.12. Superseded by strong typing.
             Whether the output type has been set for this layer.
         
             :arg index: The index of the output.
@@ -3848,12 +3878,14 @@ class ILayer:
         """
     def reset_output_type(self, index: int) -> None:
         """
+            [DEPRECATED] Deprecated in TensorRT 10.12. Superseded by strong typing.
             Reset output type of this layer.
         
             :arg index: The index of the output.
         """
     def reset_precision(self) -> None:
         """
+            [DEPRECATED] Deprecated in TensorRT 10.12. Superseded by strong typing.
             Reset the computation precision of the layer.
         """
     def set_input(self, index: int, tensor: ITensor) -> None:
@@ -3865,6 +3897,7 @@ class ILayer:
         """
     def set_output_type(self, index: int, dtype: DataType) -> None:
         """
+            [DEPRECATED] Deprecated in TensorRT 10.12. Superseded by strong typing.
             Constraint layer to generate output data with given type.
             Note that this method cannot be used to set the data type
             of the second output tensor of the topK layer. The data
@@ -4390,7 +4423,7 @@ class INetworkDefinition:
             :returns: The new element-wise layer, or :class:`None` if it could not be created.
         """
     @typing.overload
-    def add_fill(self, shape: Dims, op: FillOperation) -> IFillLayer:
+    def add_fill(self, shape: Dims, op: FillOperation, output_type: DataType) -> IFillLayer:
         """
             Add a fill layer.
             See :class:`IFillLayer` for more information.
@@ -4402,7 +4435,7 @@ class INetworkDefinition:
             :returns: The new fill layer, or :class:`None` if it could not be created.
         """
     @typing.overload
-    def add_fill(self, shape: Dims, op: FillOperation, output_type: DataType) -> IFillLayer:
+    def add_fill(self, shape: Dims, op: FillOperation) -> IFillLayer:
         """
             Add a fill layer.
             See :class:`IFillLayer` for more information.
@@ -4910,6 +4943,21 @@ class INetworkDefinition:
         
             :returns: :class:`True` if successful, :class:`False` if tensor is already marked as an output.
         """
+    def mark_unfused_tensors_as_debug_tensors(self) -> bool:
+        """
+            Mark unfused tensors as debug tensors.
+        
+            Debug tensors can be optionally emitted at runtime.
+            Tensors that are fused by the optimizer will not be emitted.
+            Tensors marked this way will not prevent fusion like mark_debug() does, thus preserving performance.
+        
+            Tensors marked this way cannot be detected by is_debug_tensor().
+            DebugListener can only get internal tensor names instead of the original tensor names in the NetworkDefinition for tensors marked this way. 
+            But the names correspond to the names obtained by IEngineInspector.
+            There is no guarantee that all unfused tensors are marked.
+        
+            :returns: True if tensors were successfully marked (or were already marked), false otherwise.
+        """
     def mark_weights_refittable(self, name: str) -> bool:
         """
             Mark a weight as refittable.
@@ -4965,6 +5013,14 @@ class INetworkDefinition:
             :arg tensor: The tensor to unmark as an output tensor.
         
             :returns: :class:`True` if successful, :class:`False` if tensor is not marked as an output.
+        """
+    def unmark_unfused_tensors_as_debug_tensors(self) -> bool:
+        """
+            Undo the marking of unfused tensor as debug tensors.
+        
+            This has no effect on tensors marked by mark_debug().
+        
+            :returns: True if tensor successfully unmarked (or was already unmarked), false otherwise.
         """
     def unmark_weights_refittable(self, name: str) -> bool:
         """
@@ -6284,7 +6340,7 @@ class IQuantizeLayer(ILayer):
         The output size is the same as the input size.
     
         IQuantizeLayer supports tensorrt.float32, tensorrt.float16 and tensorrt.bfloat16 precision and will default to tensorrt.float32 precision during instantiation.
-        IQuantizeLayer supports tensorrt.int8 and tensorrt.float8 output.
+        IQuantizeLayer supports tensorrt.int8, tensorrt.float8, tensorrt.int4 and tensorrt.fp4 output.
     
         :ivar axis: :class:`int` The axis along which quantization occurs. The quantization axis is in reference to the input tensor's dimensions.
     
@@ -6801,6 +6857,32 @@ class IStreamReaderV2:
             :arg stream: A handle to the cudaStream your implementation can use for reading.
         
             :returns: A buffer containing the bytes read.
+        """
+class IStreamWriter:
+    """
+    
+    Application-implemented class for writing data to a stream.
+    
+    To implement a custom stream writer, ensure that you explicitly instantiate the base class in :func:`__init__` :
+    ::
+    
+        class MyStreamWriter(trt.IStreamWriter):
+            def __init__(self):
+                trt.IStreamWriter.__init__(self)
+    
+            def write(self, data: bytes) -> int:
+                ... # Your implementation here
+    
+    """
+    def __init__(self) -> None:
+        ...
+    def write(self, data: capsule, size: int) -> int:
+        """
+            A callback implemented by the application to write a particular chunk of memory.
+        
+            :arg data: The data to be written out in bytes.
+        
+            :returns: The total bytes actually be written.
         """
 class ISymExpr:
     def __init__(self) -> None:
@@ -7837,6 +7919,43 @@ class OnnxParser:
             :arg index: Index of the subgraph to be checked.
             :returns: true if subgraph is supported
         """
+    def load_initializer(self, name: str, data: int, size: int) -> bool:
+        """
+            Prompt the ONNX parser to load an initializer with user-provided binary data.
+            The lifetime of the data must exceed the lifetime of the parser.
+        
+            All user-provided initializers must be provided prior to calling parse_model_proto().
+        
+            This function can be called multiple times to specify the names of multiple initializers.
+        
+            Calling this function with an initializer previously specified will overwrite the previous instance.
+        
+            This function will return false if initializer validation fails. Possible validation errors are:
+             * This function was called prior to load_model_proto().
+             * The requested initializer was not found in the model.
+             * The size of the data provided is different from the corresponding initializer in the model.
+        
+            :arg name: name of the initializer.
+            :arg data: binary data of the initializer.
+            :arg size: the size of the binary data.
+        
+            :returns: true if the initializer was successfully loaded
+        """
+    def load_model_proto(self, model: typing_extensions.Buffer, path: str = None) -> bool:
+        """
+            Load a serialized ONNX model into the parser. Unlike the parse(), parse_from_file(), or parse_with_weight_descriptors()
+            functions, this function does not immediately convert the model into a TensorRT INetworkDefinition. Using this function
+            allows users to provide their own initializers for the ONNX model through the load_initializer() function.
+        
+            Only one model can be loaded at a time. Subsequent calls to load_model_proto() will result in an error.
+        
+            To begin the conversion of the model into a TensorRT INetworkDefinition, use parse_model_proto().
+        
+            :arg model: The serialized ONNX model.
+            :arg path: The path to the model file. Only required if the model has externally stored weights.
+        
+            :returns: true if the model was loaded successfully
+        """
     def parse(self, model: typing_extensions.Buffer, path: str = None) -> bool:
         """
             Parse a serialized ONNX model into the TensorRT network.
@@ -7854,8 +7973,16 @@ class OnnxParser:
         
             :returns: true if the model was parsed successfully
         """
+    def parse_model_proto(self) -> bool:
+        """
+            Begin the parsing and conversion process of the loaded ONNX model into a TensorRT INetworkDefinition.
+        
+            :returns: true if the model was parsed successfully.
+        """
     def parse_with_weight_descriptors(self, model: typing_extensions.Buffer) -> bool:
         """
+            [DEPRECATED] Deprecated in TensorRT 10.13. See load_initializers.
+        
             Parse a serialized ONNX model into the TensorRT network with consideration of user provided weights.
         
             :arg model: The serialized ONNX model.
@@ -7972,6 +8099,43 @@ class OnnxParserRefitter:
         
             :arg index: Index of the error
         """
+    def load_initializer(self, name: str, data: int, size: int) -> bool:
+        """
+            Prompt the ONNX refitter to load an initializer with user-provided binary data.
+            The lifetime of the data must exceed the lifetime of the refitter.
+        
+            All user-provided initializers must be provided prior to calling refit_model_proto().
+        
+            This function can be called multiple times to specify the names of multiple initializers.
+        
+            Calling this function with an initializer previously specified will overwrite the previous instance.
+        
+            This function will return false if initializer validation fails. Possible validation errors are:
+             * This function was called prior to load_model_proto().
+             * The requested initializer was not found in the model.
+             * The size of the data provided is different from the corresponding initializer in the model.
+        
+            :arg name: name of the initializer.
+            :arg data: binary data of the initializer.
+            :arg size: the size of the binary data.
+        
+            :returns: true if the initializer was successfully loaded.
+        """
+    def load_model_proto(self, model: typing_extensions.Buffer, path: str = None) -> bool:
+        """
+            Load a serialized ONNX model into the refitter. Unlike the refit() or refit_from_file()
+            functions, this function does not immediately begin the refit process. Using this function
+            allows users to provide their own initializers for the ONNX model through the load_initializer() function.
+        
+            Only one model can be loaded at a time. Subsequent calls to load_model_proto() will result in an error.
+        
+            To begin the refit process, use refit_model_proto().
+        
+            :arg model: The serialized ONNX model.
+            :arg path: The path to the model file. Only required if the model has externally stored weights.
+        
+            :returns: true if the model was loaded successfully.
+        """
     def refit_from_bytes(self, model: typing_extensions.Buffer, path: str = None) -> bool:
         """
             Load a serialized ONNX model from memory and perform weight refit.
@@ -7988,6 +8152,12 @@ class OnnxParserRefitter:
             :arg model: The path to an ONNX model.
         
             :returns: true if the model was loaded successfully, and if all the weights in the engine were refit successfully.
+        """
+    def refit_model_proto(self) -> bool:
+        """
+            Begin the refit process from the loaded ONNX model.
+        
+            :returns: true if the model was refit successfully.
         """
     @property
     def num_errors(self) -> int:
@@ -9770,7 +9940,7 @@ class TensorFormat:
       CHW2 : 
         Two wide channel vectorized row major format.
     
-        This format is bound to FP16. It is only available for dimensions >= 3.
+        This format is bound to FP16 and BF16. It is only available for dimensions >= 3.
     
         For a tensor with dimensions {N, C, H, W}, the memory layout is equivalent to a C array with dimensions [N][(C+1)/2][H][W][2], with the tensor coordinates (n, c, h, w) mapping to array subscript [n][c/2][h][w][c%2].
     
@@ -9785,7 +9955,7 @@ class TensorFormat:
     
       CHW4 : 
         Four wide channel vectorized row major format.
-        This format is bound to FP16 and INT8. It is only available for dimensions >= 3.
+        This format is bound to INT8. It is only available for dimensions >= 3.
     
         For a tensor with dimensions {N, C, H, W}, the memory layout is equivalent to a C array with dimensions [N][(C+3)/4][H][W][4], with the tensor coordinates (n, c, h, w) mapping to array subscript [n][c/4][h][w][c%4].
     
@@ -9793,7 +9963,7 @@ class TensorFormat:
       CHW16 : 
         Sixteen wide channel vectorized row major format.
     
-        This format is bound to FP16. It is only available for dimensions >= 3.
+        This format is only supported by DLA and requires FP16. It is only available for dimensions >= 3.
     
         For a tensor with dimensions {N, C, H, W}, the memory layout is equivalent to a C array with dimensions [N][(C+15)/16][H][W][16], with the tensor coordinates (n, c, h, w) mapping to array subscript [n][c/16][h][w][c%16].
     
@@ -10427,6 +10597,7 @@ def init_libnvinfer_plugins(logger: capsule, namespace: str) -> bool:
 _plugin_registry = None
 bfloat16: DataType  # value = <DataType.BF16: 7>
 bool: DataType  # value = <DataType.BOOL: 4>
+e8m0: DataType  # value = <DataType.E8M0: 11>
 float16: DataType  # value = <DataType.HALF: 1>
 float32: DataType  # value = <DataType.FLOAT: 0>
 fp4: DataType  # value = <DataType.FP4: 10>
